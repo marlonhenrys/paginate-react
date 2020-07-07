@@ -1,0 +1,47 @@
+footer#menu {
+  background: blueviolet;
+  width: 100%;
+  font-size: 18px;
+  position: relative;
+  top: 100%;
+}
+
+#menu ul {
+  height: 60px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#menu ul li {
+  display: flex;
+  width: 10%;
+}
+
+#menu ul li a {
+  width: 100%;
+  border-bottom: 2px solid white;
+  text-align: center;
+  padding: 5px;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu ul li a:hover:not(.atual) {
+  border-bottom: 2px solid pink;
+  color: pink;
+}
+
+#menu ul li .atual {
+  opacity: 0.9;
+  border-bottom: 2px solid pink;
+  color: pink;
+  cursor: default;
+  pointer-events: none;
+}
